@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!-- maps -->
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
+        type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
+        type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"
+        type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"
+        type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <!-- favicon -->
+    <link  rel="icon"   href="img/favicon2.png" type="image/png" />
+    <!-- fonts -->
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Turismo Argentina</title>
+</head>
+<body>
+    <header>
+        <div id="divlogo">
+            <a href="index.html"><img src="img/logo.png" alt="logo" id="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <a href="#vacio"><li id="provmenu">CABA</li></a>
+                <a href="#destacados"><li>Destacados</li></a>
+                <a href="#tuviaje"><li>Tu viaje</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="vacio"></div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade imagenprov" id="slide4">
+            <div class="divnoticiaslide">
+                <p class="textoslide white notiprov"></p>
+                <input type="button" value="ver más" onclick="#" id='noticia1'>
+            </div>
+        </div>
+        
+        <div class="mySlides fade imagenprov" id="slide5">
+            <div class="divnoticiaslide">
+                <p class="textoslide white notiprov"></p>
+                <input type="button" value="ver más" onclick="#" id='noticia2'>
+            </div>
+        </div>
+        
+        <div class="mySlides fade imagenprov" id="slide6">
+            <div class="divnoticiaslide">
+                <p class="textoslide white notiprov"></p>
+                <input type="button" value="ver más" onclick="#" id='noticia3'>
+            </div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+
+        <div class="destacados" id="destacados">
+            <h2 class="h1general" id="provtitulo"></h2>
+            <div class="containerdestacado">
+                <div class="divdestacado imagenprov" id="destacado5">
+                    <h1 class="provdest"></h1>
+                    <p class="descriprov"></p>
+                    <button onclick="#" id='lugar1'>ver más</button>
+                </div>
+            </div>
+            <div class="containerdestacado">
+                <div class="divdestacado imagenprov" id="destacado6">
+                    <h1 class="provdest"></h1>
+                    <p class="descriprov"></p>
+                    <button onclick="#" id='lugar2'>ver más</button>
+                </div>
+            </div>
+            <div class="containerdestacado">
+                <div class="divdestacado imagenprov" id="destacado7">
+                    <h1 class="provdest"></h1>
+                    <p class="descriprov"></p>
+                    <button onclick="#" id='lugar3'>ver más</button>
+                </div>
+            </div>
+            <div class="containerdestacado">
+                <div class="divdestacado imagenprov" id="destacado8">
+                    <h1 class="provdest"></h1>
+                    <p class="descriprov"></p>
+                    <button onclick="#" id='lugar4'>ver más</button>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="mapayclima">
+        <div id="mapContainer"></div>
+
+        <div id="tuviaje" class="tuviaje">
+            <div id="primerBloque" class="primerBloque">
+                <h1 id="nombrecapital" class="nombrecapital"></h1>
+                <div id="actualdata" class="actualdata">
+                    <div id="temphoy" class="temphoy">
+                        <img id="iconoClimahoy" class="iconoClimahoy">
+                        <p id="descripcionclimahoy" class="descripcionclimahoy"></p>
+                    </div>
+                    <div id="temptermica" class="temptermica">
+                        <h2 id="tempactualhoy" class="tempactualhoy"></h2>
+                        <h3 id="senstermicahoy" class="senstermicahoy"></h3>
+                    </div>
+                </div>
+                <div id="pronosticohoy">
+                    <div class="gris">
+                        <h2 id="temp"></h2>
+                        <img>
+                        <p id="hora"></p>
+                    </div>
+                    <div>
+                        <h2></h2>
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                    <div class="gris">
+                        <h2></h2>
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                    <div>
+                        <h2></h2>
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div id="cuadroclima">
+                <div id="horaextendido">
+                    <p>06:00</p>
+                    <p>12:00</p>
+                    <p>18:00</p>
+                    <p>00:00</p>
+                </div>
+                <div id="climaExtendido">
+                    <div id="dia1" class="dias diagris">
+                        <p id="fecha"></p>
+                        <div id="iconoext">
+                            <div class="temperatura">
+                                <h1></h1>
+                                <h1></h1>
+                                <h1></h1>
+                                <h1></h1>
+                            </div>
+                            <h2 id="descripcionclima"></h2> 
+                        </div>
+                        <img id="iconoClima">
+                    </div>
+                    <div id="dia2" class="dias">
+                        <p id="fecha"></p>
+                        <div id="iconoext">
+                            <div class="temperatura">
+                                <h1></h1>
+                                <h1></h1>
+                                <h1></h1>
+                                <h1></h1>
+                            </div>
+                            <h2 id="descripcionclima"></h2> 
+                        </div>
+                        <img id="iconoClima">
+                    </div>
+                    <div id="dia3" class="dias diagris">
+                        <p id="fecha"></p>
+                        <div id="iconoext">
+                            <div class="temperatura">
+                                <h1></h1>
+                                <h1></h1>
+                                <h1></h1>
+                                <h1></h1>
+                            </div>
+                            <h2 id="descripcionclima"></h2> 
+                        </div>
+                        <img id="iconoClima">
+                    </div>
+                    <div id="dia4" class="dias">
+                        <p id="fecha"></p>
+                        <div id="iconoext">
+                            <div class="temperatura">
+                                <h1></h1>
+                                <h1></h1>
+                                <h1></h1>
+                                <h1></h1>
+                            </div>
+                            <h2 id="descripcionclima"></h2> 
+                        </div>
+                        <img id="iconoClima">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+    <footer>
+		<p>Las imágenes utilizadas son de carácter ilustrativo y de ninguna manera me pertenecen. Fueron obtenidas de la web para uso educativo.
+			Si algo te pertenece y querés que lo elimine, por favor escribime a mmiligaleano@gmail.com</p>
+    </footer>
+    
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-storage.js"></script>
+	<script src="script.js"></script>
+    <script>
+        window.onload = function onloadfunction() { 
+            cargarProv();
+            showSlides(slideIndex);
+			autoslide();
+        }
+    </script>
+</body>
+</html>

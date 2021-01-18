@@ -1,0 +1,940 @@
+* {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin:0
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 45px;
+}
+
+#divlogo{
+    width: 10vw;
+    padding-left: 1rem;
+    margin-top:0.2rem;
+}
+
+#logo{
+width: 100%;
+height: auto;
+}
+
+nav{
+    flex: 60%;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+li{
+    font-size: 0.7rem;
+    padding-right: 1rem;
+    color: black;
+}
+li:hover{
+  color: rgb(70, 70, 70);
+  font-weight: 700;
+}
+
+/* carousel */
+* {box-sizing: border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+#slide1{
+  background-image: url(img/2.jpg);
+}
+#slide2{
+  background-image: url(img/13.jpg);
+}
+#slide3{
+  background-image: url(img/12.jpg);
+}
+
+.mySlides {
+  display: none;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  -webkit-filter: brightness(80%);
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+}
+
+.divnoticiaslide{
+  width: 60%;
+  height: auto;
+}
+
+.textoslide{
+  font-size: 3em;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 1em;
+}
+
+.white{
+  color: white;
+}
+
+input{
+  background-color: rgba(255,255,255,0.3);
+  font-size: 1.2em;
+  font-weight: 600;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 15px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
+@-webkit-keyframes hoverbutton {
+  from {  background-color: rgba(255,255,255,0.3);
+    color:black;
+  } 
+  to {  background-color: black;
+    color: white;
+  }
+}
+
+@keyframes hoverbutton {
+  from {background-color: rgba(255,255,255,0.3);
+    color:black;} 
+  to {  background-color: black;
+    color: white;}
+}
+
+input:hover{
+  -webkit-animation-name: hoverbutton;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: hoverbutton;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+#pngregiones{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.divpng{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: rgb(0,122,194);
+  background: linear-gradient(90deg, rgba(0,122,194,1) 0%, rgba(0,175,225,1) 100%);
+}
+
+.h1general{
+  width: 100%;
+  font-weight: 800;
+  font-size: 2.1em;
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+#divpngs{
+  width: 50%;
+  margin-left: 25%;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+  background: none;
+}
+
+.regionpng{
+width: 8%;
+opacity: 40%;
+}
+.regionpng:hover{
+  opacity: 100%;
+}
+.regionpng.active {
+  opacity: 1;
+}
+
+#textoregion{
+  width: 50%;
+  padding: 150px;
+  padding-bottom: 0;
+  color: white;
+}
+.textosregion {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#divimgregion{
+  width: 50%;
+  height: 500px;
+  background-image: url(img/region1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* .imgregion{
+  
+} */
+
+
+/* destacados */
+.destacados{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.titulodestacado {
+  font-size: 2rem;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  width: 90%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#destacado1{
+  background-image: url("img/5.jpg");
+}
+#destacado2{
+  background-image: url("img/15.jpg");
+}
+#destacado3{
+  background-image: url("img/6.jpg");
+}
+#destacado4{
+  background-image: url("img/2.jpg");
+}
+
+.containerdestacado{
+  height: 500px;
+  width: 20vw;
+  overflow: hidden;
+}
+
+.divdestacado{
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  -webkit-filter: sepia(50%);
+  transition: all 1s;
+}
+.divdestacado:hover {
+transform: scale(1.2);
+-webkit-filter: sepia(0%);
+}
+
+.divdestacado:hover p{
+  color: rgb(0, 0, 0);
+}
+
+.divdestacado:hover button{
+  color: black;
+  border-color: black;
+}
+
+.divdestacado h1{
+  padding-top: 100px;
+  color: black;
+  font-size: 1.8em;
+}
+
+.divdestacado p {
+  font-size: 0.7em;
+  font-family: 'Open Sans', sans-serif;
+  color: transparent;
+  padding-top: 10px;
+}
+
+.divdestacado button {
+  margin-top: 240px;
+  font-size: 0.7rem;
+  font-family: 'Open Sans', sans-serif;
+  color: transparent;
+  background-color: none;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: transparent;
+  border-width: 0.5px;
+  padding: 0.5rem;
+}
+.divdestacado:hover button:hover {
+  background: rgb(0,122,194);
+  background: linear-gradient(90deg, rgba(0,122,194,1) 0%, rgba(0,175,225,1) 100%);
+  color: white;
+  border-color:transparent;
+}
+
+.eventosdiv{
+  position: relative;
+  top: -150px;
+  width: 0;
+  height: 150px;
+  background: rgb(0,122,194);
+  background: linear-gradient(90deg, rgba(0,122,194,1) 0%, rgba(0,175,225,1) 100%);
+  text-align: center;
+}
+
+.eventosdiv div{
+  opacity: 0;
+}
+
+.contevento:hover .eventosdiv div{
+  animation-name: backgroundcolorw;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.eventosdiv h1{
+  color: black;
+  padding-top: 20px;
+  font-size: 1.6em;
+}
+.eventosdiv p {
+  color: black;
+  padding: 5px;
+}
+.eventosdiv button {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  font-family: 'Open Sans', sans-serif;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 0.5px;
+  padding: 0.5rem;
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+  background-color: rgba(255,255,255,0.3);
+}
+.contevento{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.contevento:hover .eventosdiv{
+  animation-name: backgroundcolor;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.contevento:hover .eventosdiv button:hover {
+  animation-name: hoverbutton;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.contevento:hover .imgevento{
+  -webkit-filter: grayscale(50%);
+}
+
+@keyframes backgroundcolor {
+  0% {width: 0px;}
+  60% {width: 500px;} 
+  100% {width: 500px;}
+}
+@keyframes backgroundcolorw {
+  0% {opacity: 0;}
+  30% {opacity: 0;} 
+  100% {opacity: 1;}
+}
+
+#fotodelmes{
+  width: 100%;
+}
+#fotomesh1{
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#divfotodelmes{
+  height: 600px;
+  background-image: url("img/fotodelmes.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+#divfotodelmes h1{
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    color: black;
+    font-size: 3em;
+    opacity: 0;
+}
+#divfotodelmes p {
+  font-size: 1.2em;
+  color: black;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+}
+
+#divfotodelmes:hover{
+  -webkit-filter: sepia(50%);
+  transition: all 1s;
+}
+
+@keyframes transitionhover {
+  0% { opacity: 0%;}
+  50% {opacity: 50%;}
+  100% {opacity: 100%;}
+}
+
+#divfotodelmes:hover h1{
+  animation-name: transitionhover;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+#divfotodelmes:hover p{
+  animation-name: transitionhover;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+#creditofoto {
+  position: relative;
+  width: 98%;
+  top: 360px;
+  padding-top: 0.5rem;
+  text-align: right;
+  font-size: 0.7em;
+}
+
+#titulosprov{
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+#titulosprov h1{
+  margin-bottom: 0.6em;
+}
+#titulosprov p{
+  color: black;
+  text-align: center;
+}
+
+#provincias{
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background: rgb(0,122,194);
+    background: linear-gradient(90deg, rgba(0,122,194,1) 0%, rgba(0,175,225,1) 100%);
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  min-height: 100vh;
+}
+
+#mapadiv{
+  width: 400px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+#mapaprovincias{
+    height: 600px;
+}
+.bubble {
+  color: rgb(0,122,194);
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+#divdatosprov{
+  width: 640px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nombreprova{
+  width: 640px;
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.nombreprov{
+  text-align: center;
+  font-size: 3rem;
+}
+
+.nombreprov:hover {
+  color: rgb(216, 216, 216);
+}
+
+.dataprov{
+  width: 620px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.datapob{
+  margin-left: 10px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.datapob h2{
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  padding-bottom: 5px;
+  width: 400px;
+}
+
+.datapob p{
+  margin-top: 10px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(216, 216, 216);
+}
+
+.mapaprov{
+  width: 200px;
+}
+
+.imgprov {
+  width: 640px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.fotosprovs{
+  width: 200px;
+  height: 150px;
+}
+
+.provimperd{
+  width: 620;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+.actividades{
+  width: 620px;
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.actdest{
+  width: 300px;
+}
+
+.actdest h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  padding-bottom: 5px;
+}
+
+/* hover mapa */
+.hover:hover{
+    fill: rgb(58, 58, 58);
+}
+.seleccionado{
+  fill:  rgb(119, 177, 243);
+}
+
+footer p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7rem;
+  text-align: center;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+}
+
+.mapayclima{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+/* mapa */
+#mapContainer{
+  display: flex;
+  width: 50vw;
+  height: 50vw;
+}
+
+#climaybuscar{
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  height: fit-content;
+}
+
+#buscarform{
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  margin-top: 40px;
+}
+#buscarform input{
+  width: 260px;
+  height: 40px;
+  background-color: rgb(189, 189, 189);
+  border-color: rgb(41, 41, 41);
+  border-style: solid;
+  border-width: 1px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  padding-left: 2px;
+}
+
+#buscarform input:hover {
+  -webkit-animation: none;
+  animation: none;
+}
+
+#buscarform button{
+  width: 120px;
+  height: 30px;
+  background-color: rgb(44, 44, 44);
+  margin-left: 70px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+#errorbusqueda{
+  display: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-align: center;
+  color:white;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 0.5rem;
+  background: rgb(0,122,194);
+  background: linear-gradient(90deg, rgba(0,122,194,1) 0%, rgba(0,175,225,1) 100%);
+}
+
+
+/* provincia div clima */
+.tuviaje{
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+.primerBloque{
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+}
+#bloqueindex{
+  width: 260px;
+}
+
+.nombrecapital{
+  width: 100%;
+  text-align: center;
+  background: rgb(0,122,194);
+  background: linear-gradient(90deg, rgba(0,122,194,1) 0%, rgba(0,175,225,1) 100%);
+  font-size: 2.3rem;
+  padding: 0.5rem;
+}
+
+
+.actualdata{
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+}
+
+.temphoy{
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 150px;
+  align-items: flex-end;
+}
+
+.iconoClimahoy{
+  width: 100px;
+  height: 100px;
+  margin-left: 25px;
+}
+
+.descripcionclimahoy{
+  width: 150px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+}
+
+.temptermica{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+  height: 150px;
+  align-items: flex-end;
+}
+
+.tempactualhoy{
+  width: 100px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: end;
+  color: black;
+}
+
+.senstermicahoy{
+  width: 100px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: end;
+  color: black;
+}
+
+#pronosticohoy{
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+  height: 150px;
+  justify-content: flex-end;
+}
+
+#pronosticohoy div{
+  width: 80px;
+  background-color: rgb(207, 207, 207);
+  justify-content: flex-end;
+}
+
+#pronosticohoy div.gris {
+  background-color: rgb(182, 182, 182);
+}
+
+#pronosticohoy h2{
+  width: 80px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#pronosticohoy img{
+  width: 60px;
+  margin-left: 10px;
+}
+
+#pronosticohoy p{
+  width: 80px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+#cuadroclima{
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  margin-top: 20px;
+}
+
+#horaextendido{
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  margin-left: 100px;
+}
+
+#horaextendido p{
+  width: 100px;
+  background-color: rgb(149, 149, 149);
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+ 
+}
+
+#climaExtendido{
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+.dias{
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  align-items: center;
+  background-color: rgb(207, 207, 207);
+}
+
+.dias p {
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+#iconoext{
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 100px;
+}
+
+.temperatura {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 60px;
+  align-items: center;
+}
+
+.temperatura h1 {
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.dias h2 {
+  width: 400px;
+  background-color: rgb(44, 44, 44);
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+}
+
+.dias img {
+  width: 100px;
+  height: 100px;
+}
+
+.diagris {
+  background-color: rgb(182, 182, 182);
+}
+
